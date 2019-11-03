@@ -1,0 +1,31 @@
+body {  
+  font-family: 'Playfair Display', serif; 
+  color: #626262;       
+}
+#content {
+  margin: 0 auto;  
+  width: 960px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);   
+}
+.row { text-align: center; }
+.col {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 49%;
+  padding: 35px 25px;
+  text-align: left;
+}
+.col img  {
+  text-align: center;
+}
+.col h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 5px 0;
+}
+.category {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  margin-top: 25px;
+  color: #aeaea6;
+}
