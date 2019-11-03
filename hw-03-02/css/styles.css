@@ -1,0 +1,29 @@
+/*
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap);
+*/
+body {  
+  font-family: 'Playfair Display', serif; 
+  color: #626262;       
+}
+.content {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 470px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  padding: 35px 20px;
+}
+.content img {
+  text-align: center;
+}
+.content h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 5px 0;
+}
+.category {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  margin-top: 25px;
+  color: #aeaea6;
+}
