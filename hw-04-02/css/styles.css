@@ -1,0 +1,30 @@
+* {
+  font: 12pt sans-serif;
+}
+ul {
+  width:300px; 
+  margin: 0 auto;
+  list-style: none;
+  padding: 0; 
+}
+ul li {
+  text-align: center; 
+  margin-top: 5px;
+  display: block;
+  padding: 15px;
+  font: 14pt sans-serif;
+  color: #0E1116;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ccc;
+  border-radius: 8px;
+}
+li:nth-child(3n+1) {  
+     background-color: #88292F;   
+}
+li:nth-child(3n+2) {  
+     background-color: #5DB7DE;   
+}
+li:nth-child(3n+3) {  
+     background-color: #0D5D56;   
+}
