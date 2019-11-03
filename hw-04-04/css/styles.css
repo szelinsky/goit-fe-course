@@ -1,0 +1,29 @@
+* {
+  font: 12pt sans-serif;
+}
+ol {
+  width:300px; 
+  margin: 0 auto;
+  list-style: none;
+  padding: 0; 
+  counter-reset: count-box;
+}
+ol li {  
+  display: block;
+  padding: 10px;
+  font: 14pt sans-serif;
+  line-height: 2;
+  color: #0E1116;
+  text-transform: uppercase;
+}
+ol li::before {
+  display: inline-block;
+  text-align: center;
+  width: 35px;
+  height: 35px; 
+  margin-right: 10px;
+  background-color: #1abc9c;  
+  counter-increment: count-box;
+  content: counter(count-box, upper-roman);
+}
+
