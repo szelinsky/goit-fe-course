@@ -1,0 +1,25 @@
+* {
+  font: 12pt sans-serif;
+}
+ul {
+  width:300px; 
+  margin: 0 auto;
+  list-style: none;
+  padding: 0; 
+}
+ul li {
+  margin-top: 5px;
+  display: block;
+  padding: 15px;
+  font: 14pt sans-serif;
+  color: #0E1116;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ul li::before {
+  display: inline-block;
+  content: "\2192";
+  font-size: 25px;
+  padding-right: 10px;
+}
+
