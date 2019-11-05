@@ -7,6 +7,7 @@ html {
   box-sizing: border-box;
 }
 a {
+  display: block;
   text-decoration: none;
 }
 img {
@@ -96,6 +97,7 @@ article:nth-child(even) {
   border-style: solid;
   padding: 20px 30px;
   margin: 0 auto;
+  background-color: #fff; /* Safari fix */
 }
 .load-more__btn:hover {
   color: #03a9f4;
