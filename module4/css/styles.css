@@ -168,10 +168,9 @@ ol {
   background-color: rgb(78, 198, 171);
   width: 159px;
 	height: 51px;
+	line-height: 51px;
+	text-align: center;
 	cursor: pointer;
-	display: block;
-	border: none;
-	padding-bottom: inherit;
 }
 .news__list-btn:hover {
 	background: rgba(78, 198, 171, .9);
