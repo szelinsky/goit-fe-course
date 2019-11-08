@@ -46,7 +46,6 @@ ol {
 	font-weight: 300;
 	text-transform: uppercase;
 	color: #555252;
-
 	float: left;
 }
 
@@ -88,17 +87,21 @@ ol {
 	background-position: center top;
 	background-size: cover;
 	height: 600px;
-	position: relative;
+	position: relative;ß
 }
 
-.overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
+.slider__overlay {
 	width: 100%;
-	height: 600px;
+	height: 100%;
 	background-color: rgba(0, 0, 0, .5);
-	padding-top: 220px;
+}
+
+.slider__heading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 }
 
 .slider__title,
@@ -106,7 +109,6 @@ ol {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
 	text-transform: uppercase;
-	text-align: center;
 }
 
 .slider__title {
@@ -123,10 +125,10 @@ ol {
 .slider__btns {
 	position: absolute;
 	width: 1110px;
-
-	top: 225px;
+	top: 50%;
 	left: 50%;
-	transform: translateX(-50%);
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
 }
 
 .slider__btn {
@@ -136,8 +138,6 @@ ol {
 	border: none;
 	cursor: pointer;
 }
-
-
 
 .prev {
 	float: left;
@@ -197,6 +197,7 @@ ol {
 }
 
 .featured__list-item {
+	width: 255px;
 	float: left;
 	margin-right: 26px;
 	margin-bottom: 30px;
@@ -242,12 +243,16 @@ ol {
 	height: 40px;
 }
 
+.featured__wrap {
+	position: relative;
+}
+
 .featured__overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 322px;
+	height: 100%;
 	background-color: rgba(0, 0, 0, .5);
 	background-clip: padding-box;
 	opacity: 0;

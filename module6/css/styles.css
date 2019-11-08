@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.header {
+	padding-top: 28px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 120px;
+}
+
+.logo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	color: #95e1d3;
+}
+
+.header__list {
+	display: flex;
+	justify-content: space-between;
+	min-width: 490px;
+}
+
+.header__list-link {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	color: #95e1d3;
+	text-transform: uppercase;
+	position: relative;
+}
+.header__list-link:hover {
+	color: #f38181;
+
+}
+.header__list-link:after {
+	display: block;
+	position: absolute;
+	content: "";
+	height: 3px;
+	width: 0;
+	background: #f38181;
+	transition: width 0.3s ease-in-out;
+	left: -5px;
+	bottom: -12px;
+}
+.header__list-link:hover:after {
+	width: calc(100% + 10px);
+}
+.header__title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	color: #333;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.header__title span {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	text-transform: none;
+	display: block;
+	margin-bottom: 8px;
+}
+.header__title:after {
+	display: block;
+	content: "";
+	background: #f38181;
+	width: 60px;
+	height: 3px;
+	margin: 30px auto 30px auto;
+}
+.services__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.services__list-item {
+	width: 330px;
+
+	
+}
+.services__list-item:before {
+	display: block;
+	content: "";
+	width: 32px;
+	height: 32px;
+	background: url(../img/alarm.png) no-repeat center;
+	flex-grow: 2;
+}
+.services__list-item:not(:nth-child(3n)) {
+	margin-right: 30px;
+}
+.services__list-item-title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #333;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+.services__list-item-text {
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #999;
+	margin-bottom: 16px;
+}
+
+
+
