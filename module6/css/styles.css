@@ -1,3 +1,8 @@
+:root {
+	--primary-color: #95e1d3;
+	--active-color: #f38181;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -44,7 +49,7 @@ ol {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
 	font-weight: 700;
-	color: #95e1d3;
+	color: var(--primary-color);
 }
 
 .header__list {
@@ -62,7 +67,7 @@ ol {
 }
 
 .header__list-link:hover {
-	color: #f38181;
+	color: var(--active-color);
 
 }
 
@@ -72,8 +77,8 @@ ol {
 	content: "";
 	height: 3px;
 	width: 0;
-	background: #f38181;
-	transition: width 0.3s linear;
+	background: var(--active-color);
+	transition: width 0.2s linear;
 	left: -5px;
 	bottom: -12px;
 }
@@ -103,7 +108,7 @@ ol {
 .header__title:after {
 	display: block;
 	content: "";
-	background: #f38181;
+	background: var(--active-color);
 	width: 60px;
 	height: 3px;
 	margin: 30px auto 30px auto;
@@ -165,7 +170,7 @@ ol {
 
 .team__list-item:hover .team__overlay {
 	opacity: 1;
-	box-shadow: 10px 10px 0 #95e1d3;
+	box-shadow: 10px 10px 0 var(--primary-color);
 }
 
 .team__list-item:hover .team__img-wrap {
@@ -214,7 +219,7 @@ ol {
 }
 
 .social-list__link:hover {
-	background-color: #95e1d3;
+	background-color: var(--primary-color);
 }
 
 .social-list__item:first-child .social-list__link {
@@ -267,7 +272,7 @@ ol {
 }
 
 .footer__link {
-	color: #f38181;
+	color: var(--active-color);
 	display: inline;
 }
 
@@ -302,13 +307,13 @@ ol {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	background-color: rgb(149, 225, 211);
+	background-color: var(--primary-color);
 	padding: 0 32px;
-	border: 1px solid rgb(149, 225, 211);
+	border: 1px solid var(--primary-color);
 	cursor: pointer;
-	transition: all 0.3s ease 0s;
+	transition: all 0.2s ease 0s;
 }
 
 .footer__btn:hover {
-  box-shadow: inset 0 0 0 4px #87d0c3;
+	box-shadow: inset 0 0 0 4px #87d0c3;
 }
