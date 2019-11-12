@@ -122,11 +122,32 @@ ol {
 
 .services__list-item {
 	width: 400px;
-	background: url(../img/alarm.png);
-	background-position: top 0 left 28px;
-	background-repeat: no-repeat;
 	padding-left: 92px;
 	margin-bottom: 100px;
+}
+
+.services__list-item:first-child {
+	background: url(../img/alarm.png) top 0 left 28px no-repeat;
+}
+
+.services__list-item:nth-child(2) {
+	background: url(../img/graph.png) top 0 left 28px no-repeat;
+}
+
+.services__list-item:nth-child(3) {
+	background: url(../img/computer.png) top 0 left 28px no-repeat;
+}
+
+.services__list-item:nth-child(4) {
+	background: url(../img/book.png) top 0 left 28px no-repeat;
+}
+
+.services__list-item:nth-child(5) {
+	background: url(../img/home.png) top 0 left 28px no-repeat;
+}
+
+.services__list-item:last-child {
+	background: url(../img/image.png) top 0 left 28px no-repeat;
 }
 
 .services__list-item-title {
@@ -197,15 +218,13 @@ ol {
 	opacity: 0;
 	transition: box-shadow 0.2s linear;
 	box-shadow: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .social-list {
-	position: absolute;
-	bottom: 200px;
-	left: 50%;
-	transform: translateX(-50%);
 	display: flex;
-	justify-content: space-between;
 }
 
 .social-list__link {
@@ -278,6 +297,7 @@ ol {
 
 .footer__form {
 	font-size: 0;
+	display: flex;
 }
 
 .footer__form>* {
@@ -308,8 +328,7 @@ ol {
 	text-transform: uppercase;
 	text-align: center;
 	background-color: var(--primary-color);
-	padding: 1px 32px;
-	/* border: 1px solid var(--primary-color); */
+	padding: 0 32px;
 	border: 0;
 	cursor: pointer;
 	transition: all 0.2s linear;
