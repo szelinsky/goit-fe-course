@@ -1,0 +1,31 @@
+.services {
+	padding: 50px 0 0 0;
+	&__list {
+		@extend %flex-between-set;
+		flex-wrap: wrap;
+		&-item {
+			width: 400px;
+			margin-bottom: 100px;
+			@extend %flex-between-set;
+			&-title {
+				@extend %montserrat-reg-set;
+				text-transform: uppercase;
+				margin-bottom: 16px;
+			}
+			&-text {
+				font-family: "RobotoR", sans-serif;
+				font-size: 15px;
+				font-weight: 400;
+				color: #999;
+				margin-bottom: 16px;
+			}
+		}
+		&-svg {
+			display: inline-block;
+			@include square(32px);
+		}
+	}
+	&__img-block {
+		padding: 0 30px;
+	}
+}

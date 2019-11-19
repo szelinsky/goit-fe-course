@@ -1,0 +1,59 @@
+.footer {
+	&__list {
+		@extend %flex-between-set;
+		align-items: center;
+		border-top: 1px #e5e5e5 solid;
+		height: 60px;
+	}
+	&__text {
+		@extend %montserrat-reg-set;
+	}
+	&__link {
+		color: $active-color;
+		display: inline;
+	}
+	&__form {
+		font-size: 0;
+		display: flex;
+	}
+	&__form>* {
+		line-height: 40px;
+		margin: 0;
+		outline: 0;
+	}
+	&__input {
+		font-family: "RobotoLI", sans-serif;
+		font-size: 15px;
+		font-weight: 300;
+		font-style: italic;
+		color: #333;
+		padding: 0 10px;
+		border: 1px solid rgb(231, 231, 231);
+		&::placeholder {
+			color: #ccc;
+		}
+	}
+	&__btn {
+		font-size: 14px;
+		font-family: "MontserratB";
+		color: $header-color;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: $primary-color;
+		padding: 0 32px;
+		border: 0;
+		cursor: pointer;
+		transition: all 0.2s linear;
+	}
+}
+
+
+
+
+
+
+
+
+
+

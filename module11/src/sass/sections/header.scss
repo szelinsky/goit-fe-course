@@ -1,0 +1,85 @@
+.header {
+	background: url('../images/bg.jpg') no-repeat;
+	background-size: cover;
+	padding: 30px 0 230px 0;
+	&__title {
+		font-family: 'MontserratB', sans-serif;
+		font-size: 150px;
+		text-transform: uppercase;
+		color: $header-color;
+		text-align: center;
+		line-height: 140px;
+		margin-bottom: 124px;
+	}
+	&__title span{
+		font-family: 'Kaushan Script', serif;
+		font-size: 72px;
+		text-align: center;
+		text-transform: none;
+		display: block;
+	}
+	&__btn {
+		font-family: 'MontserratB';
+		font-size: 14px;
+		color: $header-color;
+		text-transform: uppercase;
+		border-style: solid;
+		border-width: 3px;
+		border-color: $header-color;
+		width: 164px;
+		height: 44px;
+		padding: 10px 0;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header {
+		background: url('../images/bg@2x.jpg') no-repeat;
+		background-size: cover;
+  }
+}
+
+.navigation {
+	@extend %flex-between-set;
+	align-items: center;
+	margin-bottom: 170px;
+	&__list {
+		@extend %flex-between-set;
+		min-width: 612px;
+	}
+	&__list-link {
+		font-family: MontserratR, sans-serif;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: $header-color;
+		position: relative;
+	}
+	&__list-link:hover {
+		color: #fce38a;
+	}
+	&__list-link:hover::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -12px;
+		background-color: #fce38a;
+		width: 100%;
+		height: 3px;
+	}
+	&__list-svg {
+		fill: $header-color;
+		@include square(18px);
+		&:hover  {
+			fill: #fce38a;
+			cursor: pointer;
+		}
+	}
+}
+
+.logo {
+	font-family: 'MontserratB', sans-serif;
+	font-size: 30px;
+	color: $header-color;
+}
